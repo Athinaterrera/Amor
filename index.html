@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Feliz Año!</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #contador {
+            font-size: 2em;
+            color: white;
+            margin: 20px 0; /* Espacio alrededor del contador */
+        }
+    </style>
+    
+</head>
+<body>
+<header>
+    <h1><strong>¡Feliz Año Amorcito!</strong></h1>
+  </header>
+  
+ 
+  <div id="contador"></div>
+
+  <img class="gif" src="arriba.gif" alt="Descripción del GIF 2">
+
+  <h2 class="subtitle">Recuerdos de Nuestro Primer Añito</h2>
+<div class="gallery">
+    <div class="photo-item">
+        <img src="ft1.jpg" alt="Foto de nosotros">
+        <p class="comment">Amo haberte conocido.</p>
+    </div>
+    <div class="photo-item">
+        <img src="ft2.PNG" alt="Foto de nosotros">
+        <p class="comment">Amo que me abraces.</p>
+    </div>
+    <div class="photo-item">
+        <img src="ft3.JPEG" alt="Foto de nosotros">
+        <p class="comment">Amo salir con vos.</p>
+    </div>
+    <div class="photo-item">
+        <img src="ft4.jpg" alt="Foto de nosotros">
+        <p class="comment">Amo tus ataques de amor.</p>
+    </div>
+    <div class="photo-item">
+        <img src="ft5.jpg" alt="Foto de nosotros">
+        <p class="comment">Amo como me miras.</p>
+    </div>
+    <div class="photo-item">
+        <img src="ft6.jpg" alt="Foto de nosotros">
+        <p class="comment">Amo que me consientas.</p>
+    </div>
+    <div class="photo-item">
+        <img src="ft7.jpg" alt="Foto de nosotros">
+        <p class="comment">Amo que te esfuerces para vernos.</p>
+    </div>
+    <div class="photo-item">
+        <img src="ft8.jpg" alt="Foto de nosotros">
+        <p class="comment">Amo comer juntitos.</p>
+    </div>
+    <div class="photo-item">
+        <img src="ft9.jpg" alt="Foto de nosotros">
+        <p class="comment">Amo dormir con vos.</p>
+    </div>
+    <div class="photo-item">
+        <img src="ft10.jpg" alt="Foto de nosotros">
+        <p class="comment">Amo hacerte mimitos.</p>
+    </div>
+    <div class="photo-item">
+        <img src="ft11.jpg" alt="Foto de nosotros">
+        <p class="comment">Amo que me llenes de besitos.</p>
+    </div>
+    <div class="photo-item">
+        <img src="ft12.jpg" alt="Foto de nosotros">
+        <p class="comment">Amo cuando me haces reir.</p>
+    </div>
+    <div class="photo-item">
+        <img src="ft13.jpg" alt="Foto de nosotros">
+        <p class="comment">Amo pasar tiempo con vos.</p>
+    </div>
+    <div class="photo-item">
+        <img src="ft14.jpg" alt="Foto de nosotros">
+        <p class="comment">Te amo aunque estes lejitos.</p>
+    </div>
+    
+</div>
+<img class="gif" src="beso1.gif" alt="Descripción del GIF 2">
+<div class="quote">
+    <p>❤️ Por muchos muchos añitos más ❤️</p>
+</div>
+
+<div class="quote">
+    <p>❤️ Te amo mucho ❤️</p>
+</div>
+ 
+<footer>
+    <p>07 - 03 - 2025</p>
+</footer>
+<script>
+    // Fecha de inicio de la relación
+    const fechaInicio = new Date('2024-03-07'); 
+    const fechaActual = new Date();
+
+    // diferencia en milisegundos
+    const diferencia = fechaActual - fechaInicio;
+
+    // Convertir la diferencia a días
+    const diasTranscurridos = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+
+    // resultado
+    document.getElementById('contador').innerText =  diasTranscurridos + ' días juntitos';
+</script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aniversario</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            background-color: #ec7596; 
+            color: white; 
+            
+        }
+        h1 {
+            color: white; 
+            margin-bottom: 50px;
+            text-align: center;
+            font-size: 5em;
+        }
+        #login {
+            background-color: #dd6587; 
+            border-radius: 10px; 
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+            padding: 20px; 
+            display: inline-block; 
+        }
+        input[type="password"] {
+            padding: 10px; 
+            margin: 10px 0; 
+            border: 1px solid #ccc; 
+            border-radius: 5px; 
+            width: 200px; 
+        }
+        button {
+            padding: 10px 20px; 
+            background-color: #c54a6d; 
+            color: white; 
+            border: none; 
+            border-radius: 5px; 
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #e55a50; 
+        }
+        #mensaje {
+            color: #333; 
+            margin-top: 10px; 
+        }
+        #gif {
+            margin-top: 20px; 
+            width: 200px; 
+        }
+    </style>
+</head>
+<body>
+    <h1>¡Feliz aniversario amorcito!</h1>
+    <div id="login-container">
+       
+    <div id="login">
+        <label for="password">Ingresar contraseña:</label>
+        <input type="password" id="password">
+        <button onclick="verificarContraseña()">Entrar</button>
+        <p id="mensaje" style="color: #333;"></p>
+        <img id="gif" src= descarga.gif alt="Descripción del GIF">
+    </div>
+   
+</div>
+    <script>
+        function verificarContraseña() {
+            const contraseñaCorrecta = "25112023"; // Cambia contraseña
+            const contraseñaIngresada = document.getElementById("password").value;
+            const mensaje = document.getElementById("mensaje");
+
+            if (contraseñaIngresada === contraseñaCorrecta) {
+                window.location.href = "index.html"; 
+            } else {
+                mensaje.textContent = "Contraseña incorrecta. Inténtalo de nuevo.";
+            }
+        }
+    </script>
+</body>
+</html>
